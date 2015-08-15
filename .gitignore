@@ -12,3 +12,5 @@ Stars/bin
 TestRobot/bin
 TestRobot/build
 TestRobot/dist
+CommandBaseRobot/build
+CommandBaseRobot/dist
