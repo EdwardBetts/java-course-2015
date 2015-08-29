@@ -1,6 +1,7 @@
 package org.usfirst.frc.team3506.robot;
 
 import org.usfirst.frc.team3506.robot.commands.AutoCommandGroup;
+import org.usfirst.frc.team3506.robot.subsystems.CatapultSubsystem;
 import org.usfirst.frc.team3506.robot.subsystems.DriveSubsystem;
 import org.usfirst.frc.team3506.robot.subsystems.ExampleSubsystem;
 import org.usfirst.frc.team3506.robot.subsystems.FiringMotorSubsystem;
@@ -23,6 +24,7 @@ public class Robot extends IterativeRobot {
 	public static OI oi;
 	public static DriveSubsystem driveSubsystem;
 	public static FiringMotorSubsystem firingMotorSubsystem;
+	public static CatapultSubsystem catapultSubsystem;
 
 	Command autonomousCommand;
 
@@ -33,6 +35,7 @@ public class Robot extends IterativeRobot {
 	public void robotInit() {
 		driveSubsystem = new DriveSubsystem();
 		firingMotorSubsystem = new FiringMotorSubsystem();
+		catapultSubsystem = new CatapultSubsystem();
 		oi = new OI();
 		// instantiate the command used for the autonomous period
 		autonomousCommand = new AutoCommandGroup();
